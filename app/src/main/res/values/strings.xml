@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Android Communication</string>
+    <string name="title_activity_send_multigram">SendMultigramActivity</string>
+    <string name="title_activity_received_multigram">ReceivedMultigramActivity</string>
+    <string name="title_activity_send_nearby">SendNearbyActivity</string>
+    <string name="title_activity_received_nearby">ReceivedNearbyActivity</string>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hqt.communication">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".multigram.SendMultigramActivity"
+            android:label="@string/title_activity_send_multigram"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".multigram.ReceivedMultigramActivity"
+            android:label="@string/title_activity_received_multigram"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".nearby.SendNearbyActivity"
+            android:label="@string/title_activity_send_nearby"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".nearby.ReceivedNearbyActivity"
+            android:label="@string/title_activity_received_nearby"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>
